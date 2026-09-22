@@ -14,13 +14,13 @@ int main (){
    media = (nota1 + nota2)/2;
 
    if (media >=6){
-    printf("Você foi aprovado!!", media);
+    printf("VocÃª foi aprovado!!", media);
    }
     else if (media >= 3.0){
-    printf("Você está de exame!!!", media);
+    printf("VocÃª estÃ¡ de exame!!!", media);
     }
     else{
-    printf("Você foi reprovado!!!", media);
+    printf("VocÃª foi reprovado!!!", media);
     }
     return 0;
 }
