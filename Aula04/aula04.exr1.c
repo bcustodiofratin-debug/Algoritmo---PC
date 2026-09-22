@@ -21,7 +21,7 @@ int main (){
 
     x2= (-b - sqrt(delta)) / (2*a);
 
-    printf("Raizes da equação:");
+    printf("Raizes da equaÃ§Ã£o:");
     printf("x1 = %.2f", x1);
     printf("x2 = %.2f", x2);
     return 0;
