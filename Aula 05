@@ -20,31 +20,31 @@ int main(void)
     // Entrada de dados
     // Solicite ao usuario todos os dados do evento.
 
-    printf("Qual ser· a quantidade total de participantes? ");
+    printf("Qual ser√° a quantidade total de participantes? ");
     scanf("%d", &qte_participantes);
 
-    printf("Qual ser· a quantidade de jogadores em cada time? ");
+    printf("Qual ser√° a quantidade de jogadores em cada time? ");
     scanf("%d", &qte_jogadores_por_time);
 
-    printf("Qual a quantidade de computadores disponÌveis? ");
+    printf("Qual a quantidade de computadores dispon√≠veis? ");
     scanf("%d", &qte_computadores);
 
-    printf("Qual È a potÍncia mÈdia de cada computador(watts)? ");
+    printf("Qual √© a pot√™ncia m√©dia de cada computador(watts)? ");
     scanf("%f", &potencia);
 
-    printf("Qual ser· a duraÁ„o do evento(horas)? ");
+    printf("Qual ser√° a dura√ß√£o do evento(horas)? ");
     scanf("%f", &duracao);
 
-    printf("Qual ser· o preÁo de 1kWh de energia? ");
+    printf("Qual ser√° o pre√ßo de 1kWh de energia? ");
     scanf("%f", &preco_kwh);
 
-    printf("Qual ser· o preÁo de um kit de alimentaÁ„o por participante? ");
+    printf("Qual ser√° o pre√ßo de um kit de alimenta√ß√£o por participante? ");
     scanf("%f", &preco_kit);
 
     printf("Quais foram outros custos do evento? ");
     scanf("%f", &outros_custos);
 
-    printf("Qual È o orÁamento m·ximo disponÌvel para o evento? ");
+    printf("Qual √© o or√ßamento m√°ximo dispon√≠vel para o evento? ");
     scanf("%f", &orcamento);
 
     // Calculos
@@ -60,8 +60,8 @@ int main(void)
 
     printf("\n============== ARENA TECH ==============\n");
     printf("\nParticipantes: %.2d", qte_participantes);
-    printf("\nTimes necess·rios: %.2d", qte_times);
-    printf("\nComputadores disponÌveis: %.2d", qte_computadores);
+    printf("\nTimes necess√°rios: %.2d", qte_times);
+    printf("\nComputadores dispon√≠veis: %.2d", qte_computadores);
 
     if (qte_computadores >= qte_participantes) {
         printf("\nInfraestrutura: SUFICIENTE!\n");
@@ -73,36 +73,36 @@ int main(void)
     printf("\nConsumo estimado: %.2f kWh", consumo_energia);
 
     if (consumo_energia <= 20) {
-        printf("\ClassificaÁ„o do consumo: BAIXO\n");
+        printf("\Classifica√ß√£o do consumo: BAIXO\n");
     } else if (consumo_energia > 20 && consumo_energia < 40){
-        printf("\nClassificaÁ„o do consumo: MODERADO\n");
+        printf("\nClassifica√ß√£o do consumo: MODERADO\n");
     } else {
-        printf("\nClassificaÁ„o do consumo: ALTO");
+        printf("\nClassifica√ß√£o do consumo: ALTO");
     }
 
     printf("\nCusto da energia: R$%.2f", custo_energia);
-    printf("\nCusto da alimentaÁ„o: R$%.2f", custo_alimentacao);
+    printf("\nCusto da alimenta√ß√£o: R$%.2f", custo_alimentacao);
     printf("\nOutros custos: R$%.2f", outros_custos);
     printf("\nCUSTO TOTAL: R$%.2f", custo_total);
     printf("\nCUSTO POR PARTICIPANTE: R$%.2f", custo_por_participante);
 
-    printf("\n\nOrÁamento disponÌvel: R$%.2f", orcamento);
+    printf("\n\nOr√ßamento dispon√≠vel: R$%.2f", orcamento);
     printf("\nSaldo: R$%.2f", saldo);
 
     if (custo_total > orcamento) {
-        printf("\nSituaÁ„o do orÁamento: ACIMA DO ORCAMENTO\n");
+        printf("\nSitua√ß√£o do or√ßamento: ACIMA DO ORCAMENTO\n");
     } else if (custo_total <= orcamento && saldo <= orcamento*0.05) {
-        printf("\nSituaÁ„o do orÁamento: NO LIMITE DO OR«AMENTO\n");
+        printf("\nSitua√ß√£o do or√ßamento: NO LIMITE DO OR√áAMENTO\n");
     } else {
-        printf("\nSituaÁ„o do orÁamento: DENTRO DO OR«AMENTO\n");
+        printf("\nSitua√ß√£o do or√ßamento: DENTRO DO OR√áAMENTO\n");
     }
 
     if (qte_participantes > qte_computadores || custo_total > orcamento) {
-        printf("\nDECIS√O FINAL: N√O RECOMENDADO!");
+        printf("\nDECIS√ÉO FINAL: N√ÉO RECOMENDADO!");
     } else if (qte_participantes <= qte_computadores && custo_total <= orcamento && consumo_energia > 40) {
-        printf("\nDECIS√O FINAL: APROVADO COM RESSALVAS!");
+        printf("\nDECIS√ÉO FINAL: APROVADO COM RESSALVAS!");
     } else {
-        printf("\nDECIS√O FINAL: APROVADO!");
+        printf("\nDECIS√ÉO FINAL: APROVADO!");
     }
     printf("\n=========================================");
 
