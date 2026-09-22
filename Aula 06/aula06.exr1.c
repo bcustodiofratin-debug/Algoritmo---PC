@@ -15,13 +15,13 @@ int main()
 
 
     for (i=0; i<=5; i++){
-        printf("Defina o preço do item: ");
+        printf("Defina o preÃ§o do item: ");
         scanf("%f", &preco);
         total_compra = total_compra + preco;
     }
 
 
-    printf("O total de compra é: %.2f", total_compra);
+    printf("O total de compra Ã©: %.2f", total_compra);
 
 
     return 0;
