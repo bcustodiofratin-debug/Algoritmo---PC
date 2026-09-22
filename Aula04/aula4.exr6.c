@@ -7,7 +7,7 @@ int main (){
     char opcao;
     int num_diarias;
     float total_pagar;
-    printf("Hospedagem An·lia\n");
+    printf("Hospedagem An√°lia\n");
     printf("[S] Quarto simples\n");
     printf("[D] Quarto duplo\n");
     printf("[T] Quarto triplo\n");
@@ -26,7 +26,7 @@ int main (){
         printf("Total a pagar R$: %.2d ", (num_diarias*600));
     }
     else{
-        printf("N„o temos essa opÁ„o!");
+        printf("N√£o temos essa op√ß√£o!");
     }
 
 
