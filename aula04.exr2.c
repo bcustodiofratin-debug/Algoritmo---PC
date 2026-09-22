@@ -6,15 +6,15 @@ int main (){
     setlocale(LC_CTYPE, "");
 
     int num;
-    printf("Digite um número: ");
+    printf("Digite um nÃºmero: ");
     scanf("%d", &num);
 
     if(num %2==0){
-    printf("O número é par!");
+    printf("O nÃºmero Ã© par!");
     scanf("%d",&num);
     }
     else (num %2!=0);{
-    printf("O número e impar! ");
+    printf("O nÃºmero e impar! ");
     scanf("%d",&num);
 
 }
