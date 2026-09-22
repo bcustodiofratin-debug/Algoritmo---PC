@@ -15,19 +15,19 @@ int main (){
     IMC = kg/pow(altura,2);
 
     if (IMC < 20){
-        printf("Você está abaixo do peso!");
+        printf("VocÃª estÃ¡ abaixo do peso!");
     }
     else if (IMC >= 20 && IMC < 25){
-        printf("Você está com peso normal!");
+        printf("VocÃª estÃ¡ com peso normal!");
     }
     else if (IMC >= 25 && IMC < 30){
-         printf("Você está com sobrepeso!");
+         printf("VocÃª estÃ¡ com sobrepeso!");
     }
     else if (IMC >= 30 && IMC < 40){
-         printf("Você está obeso!");
+         printf("VocÃª estÃ¡ obeso!");
     }
     else {
-         printf("Você está obeso mórbido!");
+         printf("VocÃª estÃ¡ obeso mÃ³rbido!");
     }
 
 
